@@ -1,0 +1,2 @@
+[console_scripts]
+peptide-analyzer = ms_peptide_analyzer.cli:main

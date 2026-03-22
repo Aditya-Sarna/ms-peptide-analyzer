@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ms-peptide-analyzer"
+version = "0.1.0"
+description = "In-silico peptide analysis using pyOpenMS nanobind bindings"
+requires-python = ">=3.9"
+dependencies = [
+    "pyopenms>=3.1.0",
+    "rich>=13.0",
+    "click>=8.1",
+]
+
+[project.scripts]
+peptide-analyzer = "ms_peptide_analyzer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
