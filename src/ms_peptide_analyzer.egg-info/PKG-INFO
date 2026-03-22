@@ -1,8 +1,0 @@
-Metadata-Version: 2.4
-Name: ms-peptide-analyzer
-Version: 0.1.0
-Summary: In-silico peptide analysis using pyOpenMS nanobind bindings
-Requires-Python: >=3.9
-Requires-Dist: pyopenms>=3.1.0
-Requires-Dist: rich>=13.0
-Requires-Dist: click>=8.1
